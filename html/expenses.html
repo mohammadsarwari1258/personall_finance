@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammad Sarwari, Nemat Mehryzadah, Amin Mohammadi">
+    <meta name="robots" content="noindex">
+    <title>Expenses | Personal Finance</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="home.html">Personal<span>Finance</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="accounts.html">Accounts</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="expenses.html" aria-current="page">Expenses</a></li>
+                <li><a href="income.html">Income</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Expenses</h1>
+
+        <div class="tabs">
+            <button class="tab active" data-target="add-form">Add</button>
+            <button class="tab" data-target="edit-form">Edit</button>
+            <button class="tab" data-target="delete-form">Delete</button>
+        </div>
+
+        <section class="card panel active" id="add-form">
+            <h2>Add expense</h2>
+            <form class="form">
+                <label for="add-category">Category</label>
+                <select id="add-category" name="add-category">
+                    <option>Food</option>
+                    <option>Transportation</option>
+                    <option>Entertainment</option>
+                    <option>Health</option>
+                    <option>Education</option>
+                    <option>Shopping</option>
+                    <option>Utilities</option>
+                    <option>Others</option>
+                </select>
+                <label for="add-amount">Amount</label>
+                <input type="number" id="add-amount" name="add-amount" required>
+                <label for="add-date">Date</label>
+                <input type="date" id="add-date" name="add-date" required>
+                <button type="submit" class="btn">Add</button>
+            </form>
+        </section>
+
+        <section class="card panel" id="edit-form">
+            <h2>Edit expense</h2>
+            <form class="form">
+                <label for="edit-id">ID to edit</label>
+                <input type="number" id="edit-id" name="edit-id" required>
+                <label for="edit-category">Category</label>
+                <select id="edit-category" name="edit-category">
+                    <option>Food</option>
+                    <option>Transportation</option>
+                    <option>Entertainment</option>
+                    <option>Health</option>
+                    <option>Education</option>
+                    <option>Shopping</option>
+                    <option>Utilities</option>
+                    <option>Others</option>
+                </select>
+                <label for="edit-amount">Amount</label>
+                <input type="number" id="edit-amount" name="edit-amount" required>
+                <label for="edit-date">Date</label>
+                <input type="date" id="edit-date" name="edit-date" required>
+                <button type="submit" class="btn">Save changes</button>
+            </form>
+        </section>
+
+        <section class="card panel" id="delete-form">
+            <h2>Delete expense</h2>
+            <form class="form">
+                <label for="delete-id">ID to delete</label>
+                <input type="number" id="delete-id" name="delete-id" required>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Your expenses</h2>
+            <form class="inline-form">
+                <label for="filter-category">Filter by category:</label>
+                <select id="filter-category">
+                    <option>All</option>
+                    <option>Food</option>
+                    <option>Transportation</option>
+                    <option>Entertainment</option>
+                    <option>Health</option>
+                    <option>Education</option>
+                    <option>Shopping</option>
+                    <option>Utilities</option>
+                    <option>Others</option>
+                </select>
+            </form>
+
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>ID</th><th>Category</th><th>Amount</th><th>Date</th></tr></thead>
+                    <tbody>
+                        <tr><td colspan="4" class="empty">No expenses yet.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; 2026 Personal Finance &mdash; Mohammad Sarwari, Nematullah Mehry Zadah, Amin Mohammadi<br>
+        Email 
+        <Address>mahammadsarwari1258@gmail.com</Address>
+        <Address>nematullahmehryzada93@gmail.com</Address>
+        <Address>mahammadsarwari1258@gmail.com</Address>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammad Sarwari, Nemat Mehryzadah, Amin Mohammadi">
+    <meta name="robots" content="noindex">
+    <title>Income | Personal Finance</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="home.html">Personal<span>Finance</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="accounts.html">Accounts</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+                <li><a href="income.htm l" aria-current="page">Income</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="page-title">Income</h1>
+
+        <div class="tabs">
+            <button class="tab active" data-target="add-form">Add</button>
+            <button class="tab" data-target="edit-form">Edit</button>
+            <button class="tab" data-target="delete-form">Delete</button>
+        </div>
+
+        <section class="card panel active" id="add-form">
+            <h2>Add income</h2>
+            <form class="form">
+                <label for="add-info">Description</label>
+                <input type="text" id="add-info" name="add-info" required>
+                <label for="add-category">Category</label>
+                <select id="add-category" name="add-category">
+                    <option>Salary</option>
+                    <option>Business</option>
+                    <option>Investment</option>
+                    <option>Gift</option>
+                    <option>Others</option>
+                </select>
+                <label for="add-amount">Amount</label>
+                <input type="number" id="add-amount" name="add-amount" required>
+                <label for="add-date">Date</label>
+                <input type="date" id="add-date" name="add-date" required>
+                <button type="submit" class="btn">Add</button>
+            </form>
+        </section>
+
+        <section class="card panel" id="edit-form">
+            <h2>Edit income</h2>
+            <form class="form">
+                <label for="edit-id">ID to edit</label>
+                <input type="number" id="edit-id" name="edit-id" required>
+                <label for="edit-info">Description</label>
+                <input type="text" id="edit-info" name="edit-info" required>
+                <label for="edit-category">Category</label>
+                <select id="edit-category" name="edit-category">
+                    <option>Salary</option>
+                    <option>Business</option>
+                    <option>Investment</option>
+                    <option>Gift</option>
+                    <option>Others</option>
+                </select>
+                <label for="edit-amount">Amount</label>
+                <input type="number" id="edit-amount" name="edit-amount" required>
+                <label for="edit-date">Date</label>
+                <input type="date" id="edit-date" name="edit-date" required>
+                <button type="submit" class="btn">Save changes</button>
+            </form>
+        </section>
+
+        <section class="card panel" id="delete-form">
+            <h2>Delete income</h2>
+            <form class="form">
+                <label for="delete-id">ID to delete</label>
+                <input type="number" id="delete-id" name="delete-id" required>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Your income</h2>
+            <form class="inline-form">
+                <input type="text" id="search" placeholder="Search income...">
+                <button type="submit" class="btn">Search</button>
+            </form>
+
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>ID</th><th>Description</th><th>Category</th><th>Amount</th><th>Date</th></tr></thead>
+                    <tbody>
+                        <tr><td colspan="5" class="empty">No income yet.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; 2026 Personal Finance &mdash; Mohammad Sarwari, Nematullah Mehry Zadah, Amin Mohammadi<br>
+        Email 
+        <Address>mahammadsarwari1258@gmail.com</Address>
+        <Address>nematullahmehryzada93@gmail.com</Address>
+        <Address>mahammadsarwari1258@gmail.com</Address>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

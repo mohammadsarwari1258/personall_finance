@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammad Sarwari, Nemat Mehryzadah, Amin Mohammadi">
+    <meta name="robots" content="noindex">
+    <title>Categories | Personal Finance</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="home.html">Personal<span>Finance</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="accounts.html">Accounts</a></li>
+                <li><a href="categories.html" aria-current="page">Categories</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+                <li><a href="income.html">Income</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="page-title">Categories</h1>
+
+        <section class="card">
+            <h2>All categories</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Name</th><th>Type</th></tr></thead>
+                    <tbody>
+                        <tr><td>Food</td><td>Expense</td></tr>
+                        <tr><td>Transportation</td><td>Expense</td></tr>
+                        <tr><td>Entertainment</td><td>Expense</td></tr>
+                        <tr><td>Health</td><td>Expense</td></tr>
+                        <tr><td>Education</td><td>Expense</td></tr>
+                        <tr><td>Shopping</td><td>Expense</td></tr>
+                        <tr><td>Utilities</td><td>Expense</td></tr>
+                        <tr><td>Salary</td><td>Income</td></tr>
+                        <tr><td>Business</td><td>Income</td></tr>
+                        <tr><td>Investment</td><td>Income</td></tr>
+                        <tr><td>Gift</td><td>Income</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Add a new category</h2>
+            <form class="form">
+                <label for="cat-name">Category name</label>
+                <input type="text" id="cat-name" name="cat-name" required>
+                <label for="cat-type">Category type</label>
+                <select id="cat-type" name="cat-type">
+                    <option>Expense</option>
+                    <option>Income</option>
+                </select>
+                <button type="submit" class="btn">Add category</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; 2026 Personal Finance &mdash; Mohammad Sarwari, Nematullah Mehry Zadah, Amin Mohammadi<br>
+        Email 
+        <Address>mahammadsarwari1258@gmail.com</Address>
+        <Address>nematullahmehryzada93@gmail.com</Address>
+        <Address>mahammadsarwari1258@gmail.com</Address>
+    </footer>
+
+</body>
+</html>
